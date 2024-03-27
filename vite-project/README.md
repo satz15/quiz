@@ -1,8 +1,51 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Start
+|
+v
+Display Login Screen
+|
+v
+User enters username and password
+|
+v
+Login successful?
+|
+|------No-------> Display Error Message
+|                   |
+|                   v
+|                Display Login Screen
+|                   |
+|                   v
+|                User enters username and password
+|                   |
+|                   v
+|                (Loop)
+|
+|------Yes------> Display Quiz Page
+|                   |
+|                   v
+|                Display Question 1
+|                   |
+|                   v
+|                User selects an answer
+|                   |
+|                   v
+|                Is the answer correct?
+|                |
+|                |------Yes------> Increment Score
+|                |
+|                |------No-------> Do Nothing
+|                   |
+|                   v
+|                Display Question 2
+|                   |
+|                   v
+|                Repeat for remaining questions
+|                   |
+|                   v
+|                End of Quiz
+|                   |
+|                   v
+|                Display Quiz Results
+|                   |
+|                   v
+|                End
